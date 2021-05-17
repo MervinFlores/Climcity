@@ -20,6 +20,8 @@
 		F461ECEA26530ABA00ECB0AC /* ClimcityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECE926530ABA00ECB0AC /* ClimcityUITests.swift */; };
 		F461ED55265315DA00ECB0AC /* StoryboardsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ED54265315DA00ECB0AC /* StoryboardsUtils.swift */; };
 		F461ED5F2653161500ECB0AC /* RealmDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ED5E2653161500ECB0AC /* RealmDAO.swift */; };
+		F461ED672653177D00ECB0AC /* UserInfoOBJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ED662653177D00ECB0AC /* UserInfoOBJ.swift */; };
+		F461ED7126531B3E00ECB0AC /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ED7026531B3E00ECB0AC /* CustomTextfield.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		F461ECEB26530ABA00ECB0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F461ED54265315DA00ECB0AC /* StoryboardsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StoryboardsUtils.swift; path = ../../../StoryboardsUtils.swift; sourceTree = "<group>"; };
 		F461ED5E2653161500ECB0AC /* RealmDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDAO.swift; sourceTree = "<group>"; };
+		F461ED662653177D00ECB0AC /* UserInfoOBJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoOBJ.swift; sourceTree = "<group>"; };
+		F461ED7026531B3E00ECB0AC /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,8 @@
 		F461ED3026530E7300ECB0AC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F461ED6C2653191400ECB0AC /* Home */,
+				F461ED6B2653190800ECB0AC /* Login */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 		F461ED352653135400ECB0AC /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				F461ED7026531B3E00ECB0AC /* CustomTextfield.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -234,8 +241,23 @@
 			isa = PBXGroup;
 			children = (
 				F461ED5E2653161500ECB0AC /* RealmDAO.swift */,
+				F461ED662653177D00ECB0AC /* UserInfoOBJ.swift */,
 			);
 			path = DataBase;
+			sourceTree = "<group>";
+		};
+		F461ED6B2653190800ECB0AC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F461ED6C2653191400ECB0AC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,8 +498,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F461ED7126531B3E00ECB0AC /* CustomTextfield.swift in Sources */,
 				F461ED5F2653161500ECB0AC /* RealmDAO.swift in Sources */,
 				F461ECCC26530AB900ECB0AC /* ViewController.swift in Sources */,
+				F461ED672653177D00ECB0AC /* UserInfoOBJ.swift in Sources */,
 				F461ECC826530AB900ECB0AC /* AppDelegate.swift in Sources */,
 				F461ED55265315DA00ECB0AC /* StoryboardsUtils.swift in Sources */,
 				F461ECCA26530AB900ECB0AC /* SceneDelegate.swift in Sources */,
