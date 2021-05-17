@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Climcity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Climcity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,6 +75,9 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sd-uQ-KbO">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="60"/>
+                                        <connections>
+                                            <action selector="buttonBirthDayTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CkH-hA-Hlg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,6 +103,9 @@
                                 <state key="normal" title="LogIn">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonLogInTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbg-R6-18o"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -124,6 +130,14 @@
                             <constraint firstItem="X3N-HD-eaH" firstAttribute="centerX" secondItem="Ogg-jK-X4p" secondAttribute="centerX" id="vYH-Z9-yCx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonBirthDay" destination="4sd-uQ-KbO" id="L8P-jd-Gqj"/>
+                        <outlet property="buttonLogIn" destination="gw7-U3-aPr" id="KYp-Wx-gE4"/>
+                        <outlet property="labelBirthDay" destination="Mc5-hj-M9B" id="Mdd-Ff-JId"/>
+                        <outlet property="labelTitle" destination="bvb-9b-d9P" id="g2g-RO-N1s"/>
+                        <outlet property="textFieldEmail" destination="X3N-HD-eaH" id="Oqf-a7-tge"/>
+                        <outlet property="textFieldName" destination="Ogg-jK-X4p" id="fAL-iZ-F8B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

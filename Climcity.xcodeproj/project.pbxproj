@@ -10,6 +10,8 @@
 		472637C42A4D754FAFFCB6C1 /* Pods_ClimcityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3616C216AA8EF2460CE09F /* Pods_ClimcityTests.framework */; };
 		986A947F96A4309E625965E2 /* Pods_Climcity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A2E3C648B825D84E0BA681 /* Pods_Climcity.framework */; };
 		B0D99F6EF1CDA4F8F7D96DF5 /* Pods_Climcity_ClimcityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5DD48B750FBF8002031069 /* Pods_Climcity_ClimcityUITests.framework */; };
+		F4550F6C26532FD5004FF20B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550F6B26532FD5004FF20B /* LoginViewController.swift */; };
+		F4550F71265335C5004FF20B /* UtilsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550F70265335C5004FF20B /* UtilsExtension.swift */; };
 		F461ECC826530AB900ECB0AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECC726530AB900ECB0AC /* AppDelegate.swift */; };
 		F461ECCA26530AB900ECB0AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECC926530AB900ECB0AC /* SceneDelegate.swift */; };
 		F461ECCC26530AB900ECB0AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECCB26530AB900ECB0AC /* ViewController.swift */; };
@@ -51,6 +53,8 @@
 		5AC45D78653EBA1C382EF3B1 /* Pods-Climcity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climcity.release.xcconfig"; path = "Target Support Files/Pods-Climcity/Pods-Climcity.release.xcconfig"; sourceTree = "<group>"; };
 		7C5DD48B750FBF8002031069 /* Pods_Climcity_ClimcityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Climcity_ClimcityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F6DC355C6294D7A41EC48F /* Pods-ClimcityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClimcityTests.release.xcconfig"; path = "Target Support Files/Pods-ClimcityTests/Pods-ClimcityTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4550F6B26532FD5004FF20B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F4550F70265335C5004FF20B /* UtilsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsExtension.swift; sourceTree = "<group>"; };
 		F461ECC426530AB900ECB0AC /* Climcity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climcity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F461ECC726530AB900ECB0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F461ECC926530AB900ECB0AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				F461ED54265315DA00ECB0AC /* StoryboardsUtils.swift */,
+				F4550F70265335C5004FF20B /* UtilsExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 		F461ED6B2653190800ECB0AC /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				F4550F6B26532FD5004FF20B /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -502,6 +508,8 @@
 				F461ED5F2653161500ECB0AC /* RealmDAO.swift in Sources */,
 				F461ECCC26530AB900ECB0AC /* ViewController.swift in Sources */,
 				F461ED672653177D00ECB0AC /* UserInfoOBJ.swift in Sources */,
+				F4550F6C26532FD5004FF20B /* LoginViewController.swift in Sources */,
+				F4550F71265335C5004FF20B /* UtilsExtension.swift in Sources */,
 				F461ECC826530AB900ECB0AC /* AppDelegate.swift in Sources */,
 				F461ED55265315DA00ECB0AC /* StoryboardsUtils.swift in Sources */,
 				F461ECCA26530AB900ECB0AC /* SceneDelegate.swift in Sources */,

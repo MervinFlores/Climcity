@@ -8,6 +8,7 @@ target 'Climcity' do
   # Pods for Climcity
 
     pod 'RealmSwift'
+    pod 'ActionSheetPicker-3.0'
 
   target 'ClimcityTests' do
     inherit! :search_paths
