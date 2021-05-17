@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		472637C42A4D754FAFFCB6C1 /* Pods_ClimcityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3616C216AA8EF2460CE09F /* Pods_ClimcityTests.framework */; };
+		986A947F96A4309E625965E2 /* Pods_Climcity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A2E3C648B825D84E0BA681 /* Pods_Climcity.framework */; };
+		B0D99F6EF1CDA4F8F7D96DF5 /* Pods_Climcity_ClimcityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5DD48B750FBF8002031069 /* Pods_Climcity_ClimcityUITests.framework */; };
+		F461ECC826530AB900ECB0AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECC726530AB900ECB0AC /* AppDelegate.swift */; };
+		F461ECCA26530AB900ECB0AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECC926530AB900ECB0AC /* SceneDelegate.swift */; };
+		F461ECCC26530AB900ECB0AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECCB26530AB900ECB0AC /* ViewController.swift */; };
+		F461ECCF26530AB900ECB0AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F461ECCD26530AB900ECB0AC /* Main.storyboard */; };
+		F461ECD126530ABA00ECB0AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F461ECD026530ABA00ECB0AC /* Assets.xcassets */; };
+		F461ECD426530ABA00ECB0AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F461ECD226530ABA00ECB0AC /* LaunchScreen.storyboard */; };
+		F461ECDF26530ABA00ECB0AC /* ClimcityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECDE26530ABA00ECB0AC /* ClimcityTests.swift */; };
+		F461ECEA26530ABA00ECB0AC /* ClimcityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECE926530ABA00ECB0AC /* ClimcityUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F461ECDB26530ABA00ECB0AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F461ECBC26530AB900ECB0AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F461ECC326530AB900ECB0AC;
+			remoteInfo = Climcity;
+		};
+		F461ECE626530ABA00ECB0AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F461ECBC26530AB900ECB0AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F461ECC326530AB900ECB0AC;
+			remoteInfo = Climcity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CA073BC9508CAC8D12E71BC /* Pods-Climcity-ClimcityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climcity-ClimcityUITests.debug.xcconfig"; path = "Target Support Files/Pods-Climcity-ClimcityUITests/Pods-Climcity-ClimcityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		11A2E3C648B825D84E0BA681 /* Pods_Climcity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Climcity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2706D9FF930E7B39653A33F5 /* Pods-ClimcityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClimcityTests.debug.xcconfig"; path = "Target Support Files/Pods-ClimcityTests/Pods-ClimcityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E3616C216AA8EF2460CE09F /* Pods_ClimcityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClimcityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC2A0E6BF3B9C09245A7D0B /* Pods-Climcity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climcity.debug.xcconfig"; path = "Target Support Files/Pods-Climcity/Pods-Climcity.debug.xcconfig"; sourceTree = "<group>"; };
+		58C97ACE966DDDBA68BF742E /* Pods-Climcity-ClimcityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climcity-ClimcityUITests.release.xcconfig"; path = "Target Support Files/Pods-Climcity-ClimcityUITests/Pods-Climcity-ClimcityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5AC45D78653EBA1C382EF3B1 /* Pods-Climcity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climcity.release.xcconfig"; path = "Target Support Files/Pods-Climcity/Pods-Climcity.release.xcconfig"; sourceTree = "<group>"; };
+		7C5DD48B750FBF8002031069 /* Pods_Climcity_ClimcityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Climcity_ClimcityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F6DC355C6294D7A41EC48F /* Pods-ClimcityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClimcityTests.release.xcconfig"; path = "Target Support Files/Pods-ClimcityTests/Pods-ClimcityTests.release.xcconfig"; sourceTree = "<group>"; };
+		F461ECC426530AB900ECB0AC /* Climcity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climcity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F461ECC726530AB900ECB0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F461ECC926530AB900ECB0AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F461ECCB26530AB900ECB0AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F461ECCE26530AB900ECB0AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F461ECD026530ABA00ECB0AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F461ECD326530ABA00ECB0AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F461ECD526530ABA00ECB0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F461ECDA26530ABA00ECB0AC /* ClimcityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimcityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F461ECDE26530ABA00ECB0AC /* ClimcityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimcityTests.swift; sourceTree = "<group>"; };
+		F461ECE026530ABA00ECB0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F461ECE526530ABA00ECB0AC /* ClimcityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimcityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F461ECE926530ABA00ECB0AC /* ClimcityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimcityUITests.swift; sourceTree = "<group>"; };
+		F461ECEB26530ABA00ECB0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F461ECC126530AB900ECB0AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986A947F96A4309E625965E2 /* Pods_Climcity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F461ECD726530ABA00ECB0AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472637C42A4D754FAFFCB6C1 /* Pods_ClimcityTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F461ECE226530ABA00ECB0AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D99F6EF1CDA4F8F7D96DF5 /* Pods_Climcity_ClimcityUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05248C7968B989013CF24D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11A2E3C648B825D84E0BA681 /* Pods_Climcity.framework */,
+				7C5DD48B750FBF8002031069 /* Pods_Climcity_ClimcityUITests.framework */,
+				2E3616C216AA8EF2460CE09F /* Pods_ClimcityTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0338FA27125889D74509923 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BC2A0E6BF3B9C09245A7D0B /* Pods-Climcity.debug.xcconfig */,
+				5AC45D78653EBA1C382EF3B1 /* Pods-Climcity.release.xcconfig */,
+				0CA073BC9508CAC8D12E71BC /* Pods-Climcity-ClimcityUITests.debug.xcconfig */,
+				58C97ACE966DDDBA68BF742E /* Pods-Climcity-ClimcityUITests.release.xcconfig */,
+				2706D9FF930E7B39653A33F5 /* Pods-ClimcityTests.debug.xcconfig */,
+				91F6DC355C6294D7A41EC48F /* Pods-ClimcityTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F461ECBB26530AB900ECB0AC = {
+			isa = PBXGroup;
+			children = (
+				F461ECC626530AB900ECB0AC /* Climcity */,
+				F461ECDD26530ABA00ECB0AC /* ClimcityTests */,
+				F461ECE826530ABA00ECB0AC /* ClimcityUITests */,
+				F461ECC526530AB900ECB0AC /* Products */,
+				E0338FA27125889D74509923 /* Pods */,
+				05248C7968B989013CF24D76 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F461ECC526530AB900ECB0AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F461ECC426530AB900ECB0AC /* Climcity.app */,
+				F461ECDA26530ABA00ECB0AC /* ClimcityTests.xctest */,
+				F461ECE526530ABA00ECB0AC /* ClimcityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F461ECC626530AB900ECB0AC /* Climcity */ = {
+			isa = PBXGroup;
+			children = (
+				F461ED2F26530E6D00ECB0AC /* Utils */,
+				F461ED3226530F3600ECB0AC /* Model */,
+				F461ED3126530E7600ECB0AC /* Views */,
+				F461ED3026530E7300ECB0AC /* Modules */,
+				F461ED3326530F3800ECB0AC /* SupportFiles */,
+			);
+			path = Climcity;
+			sourceTree = "<group>";
+		};
+		F461ECDD26530ABA00ECB0AC /* ClimcityTests */ = {
+			isa = PBXGroup;
+			children = (
+				F461ECDE26530ABA00ECB0AC /* ClimcityTests.swift */,
+				F461ECE026530ABA00ECB0AC /* Info.plist */,
+			);
+			path = ClimcityTests;
+			sourceTree = "<group>";
+		};
+		F461ECE826530ABA00ECB0AC /* ClimcityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F461ECE926530ABA00ECB0AC /* ClimcityUITests.swift */,
+				F461ECEB26530ABA00ECB0AC /* Info.plist */,
+			);
+			path = ClimcityUITests;
+			sourceTree = "<group>";
+		};
+		F461ED2F26530E6D00ECB0AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F461ED3026530E7300ECB0AC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F461ED3126530E7600ECB0AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F461ED362653135700ECB0AC /* Storyboards */,
+				F461ED352653135400ECB0AC /* CustomViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F461ED3226530F3600ECB0AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F461ED3326530F3800ECB0AC /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F461ECC726530AB900ECB0AC /* AppDelegate.swift */,
+				F461ECC926530AB900ECB0AC /* SceneDelegate.swift */,
+				F461ECCB26530AB900ECB0AC /* ViewController.swift */,
+				F461ECD026530ABA00ECB0AC /* Assets.xcassets */,
+				F461ECD226530ABA00ECB0AC /* LaunchScreen.storyboard */,
+				F461ECD526530ABA00ECB0AC /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		F461ED352653135400ECB0AC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F461ED362653135700ECB0AC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F461ECCD26530AB900ECB0AC /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F461ECC326530AB900ECB0AC /* Climcity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F461ECEE26530ABA00ECB0AC /* Build configuration list for PBXNativeTarget "Climcity" */;
+			buildPhases = (
+				F2905F28EDC01C982771F90D /* [CP] Check Pods Manifest.lock */,
+				F461ECC026530AB900ECB0AC /* Sources */,
+				F461ECC126530AB900ECB0AC /* Frameworks */,
+				F461ECC226530AB900ECB0AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Climcity;
+			productName = Climcity;
+			productReference = F461ECC426530AB900ECB0AC /* Climcity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F461ECD926530ABA00ECB0AC /* ClimcityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F461ECF126530ABA00ECB0AC /* Build configuration list for PBXNativeTarget "ClimcityTests" */;
+			buildPhases = (
+				CC23C564A6C3F16C6EF30017 /* [CP] Check Pods Manifest.lock */,
+				F461ECD626530ABA00ECB0AC /* Sources */,
+				F461ECD726530ABA00ECB0AC /* Frameworks */,
+				F461ECD826530ABA00ECB0AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F461ECDC26530ABA00ECB0AC /* PBXTargetDependency */,
+			);
+			name = ClimcityTests;
+			productName = ClimcityTests;
+			productReference = F461ECDA26530ABA00ECB0AC /* ClimcityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F461ECE426530ABA00ECB0AC /* ClimcityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F461ECF426530ABA00ECB0AC /* Build configuration list for PBXNativeTarget "ClimcityUITests" */;
+			buildPhases = (
+				A41C660AF511CC315C2E3772 /* [CP] Check Pods Manifest.lock */,
+				F461ECE126530ABA00ECB0AC /* Sources */,
+				F461ECE226530ABA00ECB0AC /* Frameworks */,
+				F461ECE326530ABA00ECB0AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F461ECE726530ABA00ECB0AC /* PBXTargetDependency */,
+			);
+			name = ClimcityUITests;
+			productName = ClimcityUITests;
+			productReference = F461ECE526530ABA00ECB0AC /* ClimcityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F461ECBC26530AB900ECB0AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F461ECC326530AB900ECB0AC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F461ECD926530ABA00ECB0AC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F461ECC326530AB900ECB0AC;
+					};
+					F461ECE426530ABA00ECB0AC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F461ECC326530AB900ECB0AC;
+					};
+				};
+			};
+			buildConfigurationList = F461ECBF26530AB900ECB0AC /* Build configuration list for PBXProject "Climcity" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F461ECBB26530AB900ECB0AC;
+			productRefGroup = F461ECC526530AB900ECB0AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F461ECC326530AB900ECB0AC /* Climcity */,
+				F461ECD926530ABA00ECB0AC /* ClimcityTests */,
+				F461ECE426530ABA00ECB0AC /* ClimcityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F461ECC226530AB900ECB0AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F461ECD426530ABA00ECB0AC /* LaunchScreen.storyboard in Resources */,
+				F461ECD126530ABA00ECB0AC /* Assets.xcassets in Resources */,
+				F461ECCF26530AB900ECB0AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F461ECD826530ABA00ECB0AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F461ECE326530ABA00ECB0AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A41C660AF511CC315C2E3772 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Climcity-ClimcityUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC23C564A6C3F16C6EF30017 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClimcityTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2905F28EDC01C982771F90D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Climcity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F461ECC026530AB900ECB0AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F461ECCC26530AB900ECB0AC /* ViewController.swift in Sources */,
+				F461ECC826530AB900ECB0AC /* AppDelegate.swift in Sources */,
+				F461ECCA26530AB900ECB0AC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F461ECD626530ABA00ECB0AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F461ECDF26530ABA00ECB0AC /* ClimcityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F461ECE126530ABA00ECB0AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F461ECEA26530ABA00ECB0AC /* ClimcityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F461ECDC26530ABA00ECB0AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F461ECC326530AB900ECB0AC /* Climcity */;
+			targetProxy = F461ECDB26530ABA00ECB0AC /* PBXContainerItemProxy */;
+		};
+		F461ECE726530ABA00ECB0AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F461ECC326530AB900ECB0AC /* Climcity */;
+			targetProxy = F461ECE626530ABA00ECB0AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F461ECCD26530AB900ECB0AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F461ECCE26530AB900ECB0AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F461ECD226530ABA00ECB0AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F461ECD326530ABA00ECB0AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F461ECEC26530ABA00ECB0AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F461ECED26530ABA00ECB0AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F461ECEF26530ABA00ECB0AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BC2A0E6BF3B9C09245A7D0B /* Pods-Climcity.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5UP96Z4H7;
+				INFOPLIST_FILE = Climcity/SupportFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MervinFlores.Climcity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F461ECF026530ABA00ECB0AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC45D78653EBA1C382EF3B1 /* Pods-Climcity.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5UP96Z4H7;
+				INFOPLIST_FILE = Climcity/SupportFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MervinFlores.Climcity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F461ECF226530ABA00ECB0AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2706D9FF930E7B39653A33F5 /* Pods-ClimcityTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5UP96Z4H7;
+				INFOPLIST_FILE = ClimcityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MervinFlores.ClimcityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Climcity.app/Climcity";
+			};
+			name = Debug;
+		};
+		F461ECF326530ABA00ECB0AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91F6DC355C6294D7A41EC48F /* Pods-ClimcityTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5UP96Z4H7;
+				INFOPLIST_FILE = ClimcityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MervinFlores.ClimcityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Climcity.app/Climcity";
+			};
+			name = Release;
+		};
+		F461ECF526530ABA00ECB0AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CA073BC9508CAC8D12E71BC /* Pods-Climcity-ClimcityUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5UP96Z4H7;
+				INFOPLIST_FILE = ClimcityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MervinFlores.ClimcityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Climcity;
+			};
+			name = Debug;
+		};
+		F461ECF626530ABA00ECB0AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58C97ACE966DDDBA68BF742E /* Pods-Climcity-ClimcityUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5UP96Z4H7;
+				INFOPLIST_FILE = ClimcityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MervinFlores.ClimcityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Climcity;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F461ECBF26530AB900ECB0AC /* Build configuration list for PBXProject "Climcity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F461ECEC26530ABA00ECB0AC /* Debug */,
+				F461ECED26530ABA00ECB0AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F461ECEE26530ABA00ECB0AC /* Build configuration list for PBXNativeTarget "Climcity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F461ECEF26530ABA00ECB0AC /* Debug */,
+				F461ECF026530ABA00ECB0AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F461ECF126530ABA00ECB0AC /* Build configuration list for PBXNativeTarget "ClimcityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F461ECF226530ABA00ECB0AC /* Debug */,
+				F461ECF326530ABA00ECB0AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F461ECF426530ABA00ECB0AC /* Build configuration list for PBXNativeTarget "ClimcityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F461ECF526530ABA00ECB0AC /* Debug */,
+				F461ECF626530ABA00ECB0AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F461ECBC26530AB900ECB0AC /* Project object */;
+}
