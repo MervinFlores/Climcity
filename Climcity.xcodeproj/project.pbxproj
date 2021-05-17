@@ -18,6 +18,8 @@
 		F461ECD426530ABA00ECB0AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F461ECD226530ABA00ECB0AC /* LaunchScreen.storyboard */; };
 		F461ECDF26530ABA00ECB0AC /* ClimcityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECDE26530ABA00ECB0AC /* ClimcityTests.swift */; };
 		F461ECEA26530ABA00ECB0AC /* ClimcityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECE926530ABA00ECB0AC /* ClimcityUITests.swift */; };
+		F461ED55265315DA00ECB0AC /* StoryboardsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ED54265315DA00ECB0AC /* StoryboardsUtils.swift */; };
+		F461ED5F2653161500ECB0AC /* RealmDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ED5E2653161500ECB0AC /* RealmDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		F461ECE526530ABA00ECB0AC /* ClimcityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimcityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F461ECE926530ABA00ECB0AC /* ClimcityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimcityUITests.swift; sourceTree = "<group>"; };
 		F461ECEB26530ABA00ECB0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F461ED54265315DA00ECB0AC /* StoryboardsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StoryboardsUtils.swift; path = ../../../StoryboardsUtils.swift; sourceTree = "<group>"; };
+		F461ED5E2653161500ECB0AC /* RealmDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 		F461ED2F26530E6D00ECB0AC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F461ED54265315DA00ECB0AC /* StoryboardsUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 		F461ED3226530F3600ECB0AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F461ED53265315B500ECB0AC /* DataBase */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +230,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		F461ED53265315B500ECB0AC /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				F461ED5E2653161500ECB0AC /* RealmDAO.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,6 +249,7 @@
 				F461ECC026530AB900ECB0AC /* Sources */,
 				F461ECC126530AB900ECB0AC /* Frameworks */,
 				F461ECC226530AB900ECB0AC /* Resources */,
+				034C702DC6132AF290DF4925 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,6 +287,7 @@
 				F461ECE126530ABA00ECB0AC /* Sources */,
 				F461ECE226530ABA00ECB0AC /* Frameworks */,
 				F461ECE326530ABA00ECB0AC /* Resources */,
+				DAD4A000140FFA20189BD254 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -353,6 +369,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		034C702DC6132AF290DF4925 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Climcity/Pods-Climcity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Climcity/Pods-Climcity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Climcity/Pods-Climcity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A41C660AF511CC315C2E3772 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +430,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DAD4A000140FFA20189BD254 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Climcity-ClimcityUITests/Pods-Climcity-ClimcityUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Climcity-ClimcityUITests/Pods-Climcity-ClimcityUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Climcity-ClimcityUITests/Pods-Climcity-ClimcityUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F2905F28EDC01C982771F90D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,8 +476,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F461ED5F2653161500ECB0AC /* RealmDAO.swift in Sources */,
 				F461ECCC26530AB900ECB0AC /* ViewController.swift in Sources */,
 				F461ECC826530AB900ECB0AC /* AppDelegate.swift in Sources */,
+				F461ED55265315DA00ECB0AC /* StoryboardsUtils.swift in Sources */,
 				F461ECCA26530AB900ECB0AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
