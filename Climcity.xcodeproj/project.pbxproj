@@ -12,6 +12,14 @@
 		B0D99F6EF1CDA4F8F7D96DF5 /* Pods_Climcity_ClimcityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5DD48B750FBF8002031069 /* Pods_Climcity_ClimcityUITests.framework */; };
 		F4550F6C26532FD5004FF20B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550F6B26532FD5004FF20B /* LoginViewController.swift */; };
 		F4550F71265335C5004FF20B /* UtilsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550F70265335C5004FF20B /* UtilsExtension.swift */; };
+		F4550F9026544DD6004FF20B /* APICallError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550F8B26544DD6004FF20B /* APICallError.swift */; };
+		F4550F9126544DD6004FF20B /* APIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550F8C26544DD6004FF20B /* APIConst.swift */; };
+		F4550F9226544DD6004FF20B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550F8D26544DD6004FF20B /* APIClient.swift */; };
+		F4550F9326544DD6004FF20B /* APIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550F8E26544DD6004FF20B /* APIResponseHandler.swift */; };
+		F4550F9426544DD6004FF20B /* APIRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550F8F26544DD6004FF20B /* APIRequestAdapter.swift */; };
+		F4550FDB265456B4004FF20B /* GeneralRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550FDA265456B4004FF20B /* GeneralRouter.swift */; };
+		F4550FE026545A9F004FF20B /* CityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550FDF26545A9F004FF20B /* CityList.swift */; };
+		F4550FE5265468A2004FF20B /* GeneralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550FE4265468A2004FF20B /* GeneralManager.swift */; };
 		F461ECC826530AB900ECB0AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECC726530AB900ECB0AC /* AppDelegate.swift */; };
 		F461ECCA26530AB900ECB0AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECC926530AB900ECB0AC /* SceneDelegate.swift */; };
 		F461ECCC26530AB900ECB0AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECCB26530AB900ECB0AC /* ViewController.swift */; };
@@ -55,6 +63,14 @@
 		91F6DC355C6294D7A41EC48F /* Pods-ClimcityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClimcityTests.release.xcconfig"; path = "Target Support Files/Pods-ClimcityTests/Pods-ClimcityTests.release.xcconfig"; sourceTree = "<group>"; };
 		F4550F6B26532FD5004FF20B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F4550F70265335C5004FF20B /* UtilsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsExtension.swift; sourceTree = "<group>"; };
+		F4550F8B26544DD6004FF20B /* APICallError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICallError.swift; sourceTree = "<group>"; };
+		F4550F8C26544DD6004FF20B /* APIConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConst.swift; sourceTree = "<group>"; };
+		F4550F8D26544DD6004FF20B /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F4550F8E26544DD6004FF20B /* APIResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseHandler.swift; sourceTree = "<group>"; };
+		F4550F8F26544DD6004FF20B /* APIRequestAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestAdapter.swift; sourceTree = "<group>"; };
+		F4550FDA265456B4004FF20B /* GeneralRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRouter.swift; sourceTree = "<group>"; };
+		F4550FDF26545A9F004FF20B /* CityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityList.swift; sourceTree = "<group>"; };
+		F4550FE4265468A2004FF20B /* GeneralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralManager.swift; sourceTree = "<group>"; };
 		F461ECC426530AB900ECB0AC /* Climcity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climcity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F461ECC726530AB900ECB0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F461ECC926530AB900ECB0AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +140,53 @@
 				91F6DC355C6294D7A41EC48F /* Pods-ClimcityTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4550F8626544D75004FF20B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F4550F8A26544D82004FF20B /* Helpers */,
+				F4550F8926544D80004FF20B /* Routers */,
+				F4550F8826544D7E004FF20B /* Managers */,
+				F4550F8726544D7C004FF20B /* DataAccess */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F4550F8726544D7C004FF20B /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				F4550FDF26545A9F004FF20B /* CityList.swift */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		F4550F8826544D7E004FF20B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F4550FE4265468A2004FF20B /* GeneralManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F4550F8926544D80004FF20B /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				F4550FDA265456B4004FF20B /* GeneralRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		F4550F8A26544D82004FF20B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F4550F8B26544DD6004FF20B /* APICallError.swift */,
+				F4550F8D26544DD6004FF20B /* APIClient.swift */,
+				F4550F8C26544DD6004FF20B /* APIConst.swift */,
+				F4550F8F26544DD6004FF20B /* APIRequestAdapter.swift */,
+				F4550F8E26544DD6004FF20B /* APIResponseHandler.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F461ECBB26530AB900ECB0AC = {
@@ -208,6 +271,7 @@
 		F461ED3226530F3600ECB0AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F4550F8626544D75004FF20B /* API */,
 				F461ED53265315B500ECB0AC /* DataBase */,
 			);
 			path = Model;
@@ -505,14 +569,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F461ED7126531B3E00ECB0AC /* CustomTextfield.swift in Sources */,
+				F4550F9126544DD6004FF20B /* APIConst.swift in Sources */,
+				F4550F9326544DD6004FF20B /* APIResponseHandler.swift in Sources */,
+				F4550F9026544DD6004FF20B /* APICallError.swift in Sources */,
+				F4550FE5265468A2004FF20B /* GeneralManager.swift in Sources */,
+				F4550FDB265456B4004FF20B /* GeneralRouter.swift in Sources */,
 				F461ED5F2653161500ECB0AC /* RealmDAO.swift in Sources */,
 				F461ECCC26530AB900ECB0AC /* ViewController.swift in Sources */,
 				F461ED672653177D00ECB0AC /* UserInfoOBJ.swift in Sources */,
 				F4550F6C26532FD5004FF20B /* LoginViewController.swift in Sources */,
 				F4550F71265335C5004FF20B /* UtilsExtension.swift in Sources */,
 				F461ECC826530AB900ECB0AC /* AppDelegate.swift in Sources */,
+				F4550F9426544DD6004FF20B /* APIRequestAdapter.swift in Sources */,
 				F461ED55265315DA00ECB0AC /* StoryboardsUtils.swift in Sources */,
 				F461ECCA26530AB900ECB0AC /* SceneDelegate.swift in Sources */,
+				F4550FE026545A9F004FF20B /* CityList.swift in Sources */,
+				F4550F9226544DD6004FF20B /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

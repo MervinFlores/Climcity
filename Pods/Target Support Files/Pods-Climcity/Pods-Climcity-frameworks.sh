@@ -176,13 +176,25 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Argo/Argo.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Curry/Curry.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Realm/Realm.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Runes/Runes.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Argo/Argo.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Curry/Curry.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Realm/Realm.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Runes/Runes.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -27,6 +27,7 @@ class LoginViewController: UIViewController {
         self.labelBirthDay.superview!.layer.borderWidth = 1.0
         self.labelBirthDay.superview!.layer.borderColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
         self.labelBirthDay.superview!.layer.cornerRadius = 4.0
+        self.buttonLogIn.layer.cornerRadius = 4.0
     }
 
     private func showDatePicker(_ sender: UIButton){
@@ -41,7 +42,15 @@ class LoginViewController: UIViewController {
         }, origin: sender)
     }
 
-    @IBAction func buttonLogInTap(_ sender: UIButton){}
+    @IBAction func buttonLogInTap(_ sender: UIButton){
+        // TODO: Validations for fields and go to home screen.
+        let newUser = UserInfo(birthDay: self.selectedDate, name: textFieldName.text ?? "", email: textFieldEmail.text ?? "")
+        let container = try! Container()
+
+        try! container.write { transaction in
+            transaction.add(newUser, update: .modified)
+        }
+    }
 
 
     @IBAction func buttonBirthDayTap(_ sender: UIButton){

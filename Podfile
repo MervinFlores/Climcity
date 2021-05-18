@@ -10,6 +10,17 @@ target 'Climcity' do
     pod 'RealmSwift'
     pod 'ActionSheetPicker-3.0'
 
+  # Networking
+    pod 'Alamofire', '4.8.1'
+  
+  # Custom Activity Indicator
+    pod 'PKHUD', '5.2.1'
+
+  # JSON handling
+    pod 'SwiftyJSON', '4.2.0'
+    pod 'Argo', '4.1.2'
+    pod 'Curry', '4.0.0'
+
   target 'ClimcityTests' do
     inherit! :search_paths
     # Pods for testing
