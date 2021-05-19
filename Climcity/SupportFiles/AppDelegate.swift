@@ -11,12 +11,42 @@ import RealmSwift
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         print("Realm File located at : ",Realm.Configuration.defaultConfiguration.fileURL as Any)
+        self.checkLogin()
         return true
+    }
+
+    private func checkLogin(){
+        let container = try! Container()
+
+        let user = container.values(UserInfo.self, matching: .all).values()
+        if user.isEmpty{
+            self.setLoginScreen()
+        } else {
+            self.setHomeScreen()
+        }
+    }
+
+    func setLoginScreen(){
+//        DispatchQueue.main.async {
+            let loginViewController = UIStoryboard.Main().instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window!.rootViewController = loginViewController
+            self.window!.makeKeyAndVisible()
+//        }
+    }
+
+    private func setHomeScreen(){
+        DispatchQueue.main.async {
+            let homeViewController = UIStoryboard.Main().instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window!.rootViewController = homeViewController
+            self.window!.makeKeyAndVisible()
+        }
     }
 
     // MARK: UISceneSession Lifecycle

@@ -11,7 +11,7 @@ import UIKit
 public class APIConst {
     
     static var baseURL: String {
-        return "api.openweathermap.org/"
+        return "https://api.openweathermap.org/"
     }
 
     static var appID: String {

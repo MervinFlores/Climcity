@@ -37,7 +37,7 @@ class GeneralManager {
         case success(City)
         case error
     }
-    
+
     typealias getDataFromCityCallbacks = (getDataFromCityCallback) -> Void
 
     static func getDataFromCity(name: String, callback: @escaping getDataFromCityCallbacks){

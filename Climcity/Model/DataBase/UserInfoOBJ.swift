@@ -52,12 +52,15 @@ extension UserInfo {
     public enum Query: QueryType {
 
         case name(String)
+        case all
 
         public var predicate: NSPredicate? {
             switch
                 self {
             case .name(let value):
                 return NSPredicate(format: "name == %@", value)
+            case .all:
+                return nil
             }
 
         }
@@ -71,7 +74,7 @@ extension UserInfo {
 
         case name(String)
 
-        public var propertyValuePair: PropertyValuePair {8
+        public var propertyValuePair: PropertyValuePair {
             switch self {
             case .name(let name):
                 return ("name", name)

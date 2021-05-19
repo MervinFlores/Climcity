@@ -62,5 +62,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Climcity need access to your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Climcity need access to your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Climcity need access to your location</string>
 </dict>
 </plist>

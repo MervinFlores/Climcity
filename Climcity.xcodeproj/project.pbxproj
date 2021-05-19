@@ -20,6 +20,11 @@
 		F4550FDB265456B4004FF20B /* GeneralRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550FDA265456B4004FF20B /* GeneralRouter.swift */; };
 		F4550FE026545A9F004FF20B /* CityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550FDF26545A9F004FF20B /* CityList.swift */; };
 		F4550FE5265468A2004FF20B /* GeneralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550FE4265468A2004FF20B /* GeneralManager.swift */; };
+		F4550FEA26547B9B004FF20B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550FE926547B9B004FF20B /* HomeViewController.swift */; };
+		F455100126547EAF004FF20B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F455100026547EAF004FF20B /* HomeViewModel.swift */; };
+		F4551006265547AF004FF20B /* CityAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4551005265547AF004FF20B /* CityAnnotation.swift */; };
+		F455100B265553BC004FF20B /* ClimcityAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F455100A265553BC004FF20B /* ClimcityAlerts.swift */; };
+		F455101026556318004FF20B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F455100F26556318004FF20B /* LoginViewModel.swift */; };
 		F461ECC826530AB900ECB0AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECC726530AB900ECB0AC /* AppDelegate.swift */; };
 		F461ECCA26530AB900ECB0AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECC926530AB900ECB0AC /* SceneDelegate.swift */; };
 		F461ECCC26530AB900ECB0AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461ECCB26530AB900ECB0AC /* ViewController.swift */; };
@@ -71,6 +76,11 @@
 		F4550FDA265456B4004FF20B /* GeneralRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRouter.swift; sourceTree = "<group>"; };
 		F4550FDF26545A9F004FF20B /* CityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityList.swift; sourceTree = "<group>"; };
 		F4550FE4265468A2004FF20B /* GeneralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralManager.swift; sourceTree = "<group>"; };
+		F4550FE926547B9B004FF20B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F455100026547EAF004FF20B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F4551005265547AF004FF20B /* CityAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAnnotation.swift; sourceTree = "<group>"; };
+		F455100A265553BC004FF20B /* ClimcityAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimcityAlerts.swift; sourceTree = "<group>"; };
+		F455100F26556318004FF20B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F461ECC426530AB900ECB0AC /* Climcity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climcity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F461ECC726530AB900ECB0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F461ECC926530AB900ECB0AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -246,6 +256,7 @@
 			children = (
 				F461ED54265315DA00ECB0AC /* StoryboardsUtils.swift */,
 				F4550F70265335C5004FF20B /* UtilsExtension.swift */,
+				F455100A265553BC004FF20B /* ClimcityAlerts.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -319,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				F4550F6B26532FD5004FF20B /* LoginViewController.swift */,
+				F455100F26556318004FF20B /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -326,6 +338,9 @@
 		F461ED6C2653191400ECB0AC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F4550FE926547B9B004FF20B /* HomeViewController.swift */,
+				F455100026547EAF004FF20B /* HomeViewModel.swift */,
+				F4551005265547AF004FF20B /* CityAnnotation.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -568,11 +583,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F455100126547EAF004FF20B /* HomeViewModel.swift in Sources */,
 				F461ED7126531B3E00ECB0AC /* CustomTextfield.swift in Sources */,
+				F455101026556318004FF20B /* LoginViewModel.swift in Sources */,
 				F4550F9126544DD6004FF20B /* APIConst.swift in Sources */,
 				F4550F9326544DD6004FF20B /* APIResponseHandler.swift in Sources */,
 				F4550F9026544DD6004FF20B /* APICallError.swift in Sources */,
 				F4550FE5265468A2004FF20B /* GeneralManager.swift in Sources */,
+				F4550FEA26547B9B004FF20B /* HomeViewController.swift in Sources */,
+				F4551006265547AF004FF20B /* CityAnnotation.swift in Sources */,
 				F4550FDB265456B4004FF20B /* GeneralRouter.swift in Sources */,
 				F461ED5F2653161500ECB0AC /* RealmDAO.swift in Sources */,
 				F461ECCC26530AB900ECB0AC /* ViewController.swift in Sources */,
@@ -583,6 +602,7 @@
 				F4550F9426544DD6004FF20B /* APIRequestAdapter.swift in Sources */,
 				F461ED55265315DA00ECB0AC /* StoryboardsUtils.swift in Sources */,
 				F461ECCA26530AB900ECB0AC /* SceneDelegate.swift in Sources */,
+				F455100B265553BC004FF20B /* ClimcityAlerts.swift in Sources */,
 				F4550FE026545A9F004FF20B /* CityList.swift in Sources */,
 				F4550F9226544DD6004FF20B /* APIClient.swift in Sources */,
 			);
