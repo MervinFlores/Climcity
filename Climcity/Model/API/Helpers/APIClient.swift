@@ -121,12 +121,12 @@ class APIClient {
                                 case .failure(let encodingError):
                                     DispatchQueue.main.async {
                                         onError?(APICallError.Serialization(
-                                            SimpleError.onlyDescr(description: "multipart encoding issue: \(encodingError)")),
+                                                    SimpleError.onlyDescr(description: "multipart encoding issue: \(encodingError)")),
                                                  "\(APIConst.baseURL)\(try! to.asURL().absoluteString)"
                                         )
                                     }
                                 }
-        }
+                              }
         )
     }
     
@@ -138,7 +138,7 @@ class APIClient {
         parameters: Parameters? = nil,
         encoding: ParameterEncoding = URLEncoding.default,
         headers: HTTPHeaders? = nil)
-        -> DataRequest
+    -> DataRequest
     {
         return shared.session.request(
             url,

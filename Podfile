@@ -16,6 +16,9 @@ target 'Climcity' do
   # Custom Activity Indicator
     pod 'PKHUD', '5.2.1'
 
+  # Custom Keyboard
+    pod 'IQKeyboardManagerSwift'
+
   # JSON handling
     pod 'SwiftyJSON', '4.2.0'
     pod 'Argo', '4.1.2'

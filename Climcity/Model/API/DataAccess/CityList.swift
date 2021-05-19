@@ -82,6 +82,7 @@ struct Main {
     var pressure: Float?
     var humidity: Int?
 
+    /// transfrom temp from Kelvin to Celsius
     func getStringTempInCelsius() -> String{
         guard let currentTemp = self.temp else { return "??" }
         let celsiusTemp = currentTemp - 273.15

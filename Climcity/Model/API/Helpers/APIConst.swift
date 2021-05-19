@@ -13,7 +13,7 @@ public class APIConst {
     static var baseURL: String {
         return "https://api.openweathermap.org/"
     }
-
+    
     static var appID: String {
         return "3a2a826f7b25ce9d5d6af6a7baad36d7"
     }

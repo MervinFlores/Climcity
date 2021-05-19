@@ -37,12 +37,6 @@ import UIKit
         }
     }
 
-//    @IBInspectable override var borderWidth: CGFloat {
-//        didSet {
-//            layer.borderWidth = borderWidth
-//        }
-//    }
-
     override func awakeFromNib() {
         super.awakeFromNib()
         self.upperLabel?.font = self.labelFont

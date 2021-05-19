@@ -16,7 +16,8 @@ class HomeViewModel{
     var locationManager: CLLocationManager?
     var myLocation: CLLocationCoordinate2D?
     var lastCitySearched: City?
-
+    var citiesAround: [City]?
+    
     init(viewController: HomeViewController) {
         self.viewController = viewController
         return
@@ -39,7 +40,12 @@ class HomeViewModel{
 
     }
 
-    var citiesAround: [City]?
+    func shapeViews(){
+        guard let homeViewController = self.viewController else { return }
+        homeViewController.viewSearchContainer.layer.cornerRadius = 8.0
+
+    }
+
     private func getCitiesAround(lat: Float, lon: Float){
         guard let homeViewController = self.viewController else { return }
         homeViewController.view.showLoading()
@@ -49,6 +55,9 @@ class HomeViewModel{
             case .success(let cities):
                 self.citiesAround = cities
                 self.loadMarks()
+
+                guard let myCity = cities.first else { return }
+                homeViewController.labelMyLocationInfo.text = "📍\(myCity.name ?? "")\n🌡\(myCity.main?.getStringTempInCelsius() ?? "??")C \n☁️\(myCity.clouds?.all ?? 30)% \n💧\(myCity.main?.humidity ?? 60)% \n💨\(myCity.main?.pressure ?? 940)hPa"
             case .empty:
                 DispatchQueue.main.async() {
                     homeViewController.present(ClimcityAlert.sharedInstance.unaryAlertWithTitle("Not found", Message: "Not city found with this name"), animated: true, completion: nil)
@@ -84,7 +93,7 @@ class HomeViewModel{
         homeViewController.view.showLoading()
         GeneralManager.getDataFromCity(name: name) { (response) in
             homeViewController.view.dismissLoading()
-            switch response{
+            switch response {
             case .success(let city):
                 self.centerMapToLocation(lat: Float(city.coord?.lat ?? 0.0), lon: Float(city.coord?.lon ?? 0.0), city: city)
             case .error:
@@ -145,18 +154,16 @@ class HomeViewModel{
             }
             locationManager!.requestWhenInUseAuthorization()
         default:
-            print("Location Servies: Denied / Restricted")
+            debugPrint("Location Servies: Denied / Restricted")
         }
     }
 
     func setMap(){
         guard let homeViewController = self.viewController else { return }
-        self.locationManager = CLLocationManager()
-        // Ask for Authorisation from the User.
-        self.locationManager?.requestAlwaysAuthorization()
 
-        // For use in foreground
-        self.locationManager?.requestWhenInUseAuthorization()
+        self.locationManager = CLLocationManager()
+
+        self.checkLocationAuthorization()
 
         if CLLocationManager.locationServicesEnabled() {
             self.locationManager?.delegate = homeViewController

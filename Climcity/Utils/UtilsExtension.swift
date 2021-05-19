@@ -20,7 +20,7 @@ extension Date {
 }
 
 extension UIView{
-    // show loading overlay over current view
+    /// show loading overlay over current view
     func showLoading(message:String = "") {
         HUD.dimsBackground = false
         HUD.allowsInteraction = false

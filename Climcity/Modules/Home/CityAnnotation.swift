@@ -12,7 +12,7 @@ class CityAnnotation: NSObject, MKAnnotation {
     let title: String?
     let coordinate: CLLocationCoordinate2D
     let subtitle: String?
-
+    
     init(
         title: String?,
         subtitle: String?,
@@ -21,7 +21,7 @@ class CityAnnotation: NSObject, MKAnnotation {
         self.title = title
         self.subtitle = subtitle
         self.coordinate = coordinate
-
+        
         super.init()
     }
 }

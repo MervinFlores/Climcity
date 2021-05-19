@@ -11,12 +11,6 @@ import ActionSheetPicker_3_0
 
 class LoginViewModel{
 
-    // TODO: Estilizar botones.
-    // TODO: Agregar vista con mis datos en la pantalla (temperatura en donde estoy ahorita)
-    // TODO: Agregar pod IQKeyboardManager.
-    // TODO: Corregir bugs
-
-
     private var viewController: LoginViewController?
     private var selectedDate: Date?
 
@@ -36,8 +30,8 @@ class LoginViewModel{
                 transaction.add(newUser, update: .modified)
             }
 
-            guard let homeViewController = UIStoryboard.Main().instantiateViewController(identifier: "HomeViewController") as? HomeViewController else { return }
-            loginViewController.present(homeViewController, animated: true, completion: nil)
+            guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+            appdelegate.setHomeScreen()
 
         } else {
             DispatchQueue.main.async() {

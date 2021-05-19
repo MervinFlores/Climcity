@@ -19,6 +19,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var buttonShowSearch: UIButton!
     @IBOutlet weak var buttonCenterLocation: UIButton!
 
+    @IBOutlet weak var viewMyLocationContainer: UIView!
+    @IBOutlet weak var labelMyLocationTitle: UILabel!
+    @IBOutlet weak var labelMyLocationInfo: UILabel!
+
     // MARK: - View model
     lazy var viewModel: HomeViewModel = {
         return HomeViewModel(viewController: self)
@@ -27,6 +31,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel.setMap()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.viewModel.shapeViews()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -63,29 +72,9 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: CLLocationManagerDelegate, MKMapViewDelegate{
-//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//        guard let annotation = annotation as? CityAnnotation else { return nil }
-//        let identifier = "cityAnnotation"
-//        var view: MKMarkerAnnotationView
-//
-//        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
-//            dequeuedView.annotation = annotation
-//            view = dequeuedView
-//        } else {
-//            view = MKMarkerAnnotationView(
-//                annotation: annotation,
-//                reuseIdentifier: identifier)
-//            view.canShowCallout = true
-//            view.calloutOffset = CGPoint(x: -5, y: 5)
-//            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-//        }
-//
-//        return view
-//    }
-
-        func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-            self.viewModel.checkLocationAuthorization(authorizationStatus: status)
-        }
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        self.viewModel.checkLocationAuthorization(authorizationStatus: status)
+    }
 }
 
 
